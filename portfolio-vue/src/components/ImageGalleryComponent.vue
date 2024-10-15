@@ -2,8 +2,10 @@
     <div class="slideshow-container">
         <div class="slideshow">
             <transition name="fade">
-                <img :key="currentImage" :src="currentImage" alt="Film Photo">
+                <img v-if="!isLoading" :key="currentImage" :src="currentImage" alt="Film Photo">
             </transition>
+            <div v-if="isLoading" class="loading-indicator">Loading...</div>
+
         </div>
         <div class="controls">
             <button @click="prevImage">❮</button>
@@ -30,6 +32,7 @@ const filmPhotos = imageNames.map(name => new URL(`../assets/photos/film/film_tr
 
 const currentIndex = ref(0);
 const currentImage = ref(filmPhotos[currentIndex.value]);
+const isLoading = ref(true);
 
 const preloadImages = (images) => {
     images.forEach((src) => {
@@ -58,9 +61,15 @@ const shuffleArray = (array) => {
 };
 
 onMounted(() => {
-    shuffleArray(filmPhotos);
     preloadImages(filmPhotos);
-    currentImage.value = filmPhotos[currentImage.value];
+    shuffleArray(filmPhotos);
+
+
+    setTimeout(() => {
+        currentImage.value = filmPhotos[currentImage.value];
+        isLoading.value = false;
+    }, 5000);
+
     interval = setInterval(nextImage, 5000);
 });
 
@@ -93,6 +102,24 @@ onUnmounted(() => {
     left: 0;
     transition: opacity 0.5s ease;
 
+}
+
+.loading-indicator {
+    position: relative;
+    top: 50%;
+    transform: translateY(-10%);
+    font-size: 1.5rem;
+    color: black;
+
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    animation: pulse 1s infinite;
 }
 
 .fade-enter-active,

@@ -13,6 +13,9 @@
             <li>
                 <RouterLink :to="{ name: 'resume' }" :class="{ active: isActive('/resume')}">Resume</RouterLink>
             </li>
+            <li>
+                <RouterLink :to="{ name: 'contact' }" :class="{ active: isActive('/contact')}">Contact</RouterLink>
+            </li>
         </ul>
     </nav>
 </template>
