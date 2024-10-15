@@ -4,7 +4,7 @@
 *.jpg
 
 
-# /src/assets/imgs
-# /src/assets/music
-# /src/assets/photos
-# /src/assets/resume.pdf
+# portfolio-vue/src/assets/imgs
+# portfolio-vue/src/assets/music
+# portfolio-vue/src/assets/photos
+# portfolio-vue/src/assets/resume.pdf
