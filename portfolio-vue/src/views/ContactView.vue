@@ -15,7 +15,7 @@
                 <label for="message">Message:</label>
                 <textarea v-model="form.message" id="message" name="message" required></textarea>
             </div>
-            <input type="hidden" name="_next" value="https://yourwebsite.com/success">
+            <input type="hidden" name="_next" value="https://google.com/">
             <input type="hidden" name="_captcha" value="false">
             <button type="submit">Send Message</button>
         </form>
