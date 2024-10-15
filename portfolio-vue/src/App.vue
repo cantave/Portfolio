@@ -32,6 +32,7 @@ header {
   padding: 20px;
   margin: 0px;
   font-family: 'Oswald', sans-serif;
+  border-radius: 8px;
 
 }
 

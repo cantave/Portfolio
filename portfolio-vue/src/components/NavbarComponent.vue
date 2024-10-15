@@ -50,10 +50,12 @@ export default {
 .navbar a {
     color: black;
     text-decoration: none;
+    transition: transform 0.2s ease, text-decoration 0.2s ease;
 }
 
 .navbar a:hover {
     text-decoration: underline;
+    transform: scale(1.1);
 }
 
 .navbar a.active {
