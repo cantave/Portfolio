@@ -2,7 +2,7 @@
     <div class="contact-container">
         <h2> Contact Me</h2>
         <img class="headshot" :src="headshotUrl" alt="Headshot">
-        <form action="https://formsubmit.co/marven.cantave@gmail.com" method="POST">
+        <form action="https://formsubmit.co/ad80873878273ad630f19f7d98a25718" method="POST">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" v-model="form.name" required />
