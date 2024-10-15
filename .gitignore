@@ -2,3 +2,9 @@
 *.pdf
 *.png
 *.jpg
+
+
+# /src/assets/imgs
+# /src/assets/music
+# /src/assets/photos
+# /src/assets/resume.pdf
