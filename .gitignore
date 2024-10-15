@@ -1,10 +1,30 @@
-*.mp3
-*.pdf
-*.png
-*.jpg
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
+node_modules
+.DS_Store
+dist
+dist-ssr
+coverage
+*.local
 
-# portfolio-vue/src/assets/imgs
-# portfolio-vue/src/assets/music
-# portfolio-vue/src/assets/photos
-# portfolio-vue/src/assets/resume.pdf
+/cypress/videos/
+/cypress/screenshots/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*.tsbuildinfo
