@@ -96,6 +96,7 @@ button {
 
 button {
     font-weight: bold;
+    border: black;
 }
 
 button:hover {
