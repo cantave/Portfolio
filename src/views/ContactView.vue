@@ -97,6 +97,7 @@ button {
 button {
     font-weight: bold;
     border: black;
+    text-decoration: black;
 }
 
 button:hover {
