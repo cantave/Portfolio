@@ -1,35 +1,49 @@
 <template>
     <div class="resume">
-        <embed :src="resume" />
+        <iframe src="/resume.pdf" title="Resume PDF" style="width: 100%; height: 500px; border: none;"> </iframe>
+        <p v-if="!resume"> Resume not found. Please check the path.</p>
     </div>
 </template>
 
 <script>
-import pdf from '../assets/resume.pdf'
-
 export default {
     data() {
         return {
-            resume: pdf
+            resume: '/resume.pdf'
         }
+    },
+    mounted() {
+        console.log(this.resume)
     }
 }
 
 </script>
 
 <style scoped>
-embed {
-    width: 70vw;
-    height: 100vh;
-    border: none;
-
-}
-
 .resume {
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
     max-height: 75vh;
-    overflow-y: auto;
+    overflow: hidden;
     padding-top: 20px;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    height: 400px;
+    border: none;
+    overflow-y: auto;
+
+}
+
+
+@media (max-width: 500px) {
+    iframe {
+        height: 300px;
+        width: 100%;
+    }
 }
 </style>

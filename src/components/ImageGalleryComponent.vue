@@ -2,7 +2,7 @@
     <div class="slideshow-container">
         <div class="slideshow">
             <transition name="fade">
-                <img v-if="!isLoading" :key="currentImage" :src="currentImage" alt="Film Photo">
+                <img v-if="!isLoading" :key="currentImage" :src="currentImage" alt="Film Photo" class="slideshow-image">
             </transition>
             <div v-if="isLoading" class="loading-indicator">Loading...</div>
 
@@ -81,23 +81,23 @@ onUnmounted(() => {
 <style scoped>
 .slideshow-container {
     position: relative;
-    max-width: 600px;
+    max-width: 100%;
     margin: auto;
 
 }
 
 .slideshow {
-    max-height: 400px;
     overflow: hidden;
     position: relative;
+    height: 400px;
 }
 
 .slideshow img {
     width: 100%;
-    height: auto;
-    max-height: 400px;
+    height: 100%;
     object-fit: contain;
     border-radius: 8px;
+    position: absolute;
     top: 0;
     left: 0;
     transition: opacity 0.5s ease;

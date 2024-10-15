@@ -47,7 +47,10 @@ export default {
 .navbar ul {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
+    padding: 0;
+    margin: 0%;
 }
 
 .navbar a {
@@ -64,5 +67,17 @@ export default {
 .navbar a.active {
     color: purple;
     font-weight: bold;
+}
+
+@media (max-width: 500px){
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.5rem;
+    }
+
+    .navbar {
+        padding: 0.5rem;
+    }
 }
 </style>

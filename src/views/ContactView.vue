@@ -50,6 +50,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 20px;
 }
 
 h2 {
@@ -70,7 +71,7 @@ form {
     width: 100%;
 }
 
-.form.group {
+.form-group {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -99,6 +100,12 @@ button {
 
 button:hover {
     cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .contact-container {
+        padding: 0 15px;
+    }
 }
 
 
