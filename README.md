@@ -36,9 +36,9 @@ The portfolio includes sections for an image gallery, music player, project repo
 - **State Management**: Managing the state for multiple components (e.g., the music player and slideshow) was initially challenging. I overcame this by using Vue's reactive features effectively.
 - **Embedding Audio and Video**: Setting up the audio player to handle different tracks and ensuring smooth transitions required additional logic and testing.
 
-  ## Future Improvements
+## Future Improvements
 
-  - **Blog Feature**: Adding a blog section to share insights and learnings from my development journey.
-  - **More Projects!**: Adding more increasingly complex projects to my portfolio (ie, CRUD app, API, etc) to showcase my learnings and progress.
+- **Blog Feature**: Adding a blog section to share insights and learnings from my development journey.
+- **More Projects!**: Adding more increasingly complex projects to my portfolio (ie, CRUD app, API, etc) to showcase my learnings and progress.
  
-  Feel free to reach out if you have any questions or feedback!
+Feel free to reach out if you have any questions or feedback!
