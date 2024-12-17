@@ -22,6 +22,7 @@ import Thunda from '@/assets/music/Thunda HNNY Remix.mp3';
 import CantStop from '@/assets/music/Cant Stop.mp3';
 import SuperBoy from '@/assets/music/SUPERBOY.mp3';
 import NoseOnTheGrindstone from '@/assets/music/Nose On The Grindstone.mp3';
+import Cloudy from '@/assets/music/Cloudy.mp3';
 
 const tracks = [
   {
@@ -59,6 +60,11 @@ const tracks = [
     title: "Nose On The Grindstone",
     artist: "Tyler Childers",
     src: NoseOnTheGrindstone,
+  },
+  {
+    title: "Cloudy",
+    artist: "DAPHNI",
+    src: Cloudy,
   }
 ];
 
